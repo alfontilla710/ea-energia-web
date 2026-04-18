@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E&A Energía Renovable</title>
+
+<style>
+body{margin:0;font-family:'Segoe UI',sans-serif}
+
+.tagline{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* NAV */
+nav{
+background:#0A2540;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 40px;
+}
+nav img{
+    height:110px;
+    object-fit:contain;
+}
+nav a{color:white;text-decoration:none;margin:0 15px}
+
+/* HERO */
+.hero{
+    height:550px;
+    background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero h1{font-size:48px}
+.hero p{font-size:20px}
+
+.btn{
+background:#2ECC71;
+padding:14px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* SECCIONES */
+.section{padding:40px 20px;text-align:center}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+width:300px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+text-align:left;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content{
+padding:15px;
+}
+
+.card h3{
+margin:0 0 10px;
+color:#0A2540;
+}
+
+.card p{
+font-size:14px;
+color:#555;
+}
+
+/* FORMULARIO */
+.form-container{
+background:white;
+max-width:500px;
+margin:40px auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-container input,
+.form-container textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.form-container button{
+width:100%;
+padding:14px;
+background:#2ECC71;
+border:none;
+color:white;
+border-radius:5px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:10px 15px;
+border-radius:50px;
+display:flex;
+align-items:center;
+gap:8px;
+color:white;
+font-weight:bold;
+text-decoration:none;
+z-index:999999;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp img{width:25px}
+
+/* FOOTER */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style></head>
+
+<body>
+
+<nav>
+<img src="logo.png">
+
+<div class="tagline">
+⚡ ENERGIA SOLAR PARA HOGARES Y EMPRESAS
+</div>
+
+<div>
+<a href="#">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#contacto">Contacto</a>
+<a href="#contacto" class="btn-nav">Cotizar</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Reduce hasta un 90% tu factura de energía</h1>
+<p>Convierte el sol en ahorro real para tu hogar o empresa</p>
+<a href="#contacto" class="btn">Cotizar ahora</a>
+</section>
+
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+<h2>Servicios</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>☀️ Energía Solar</h3>
+<p>Diseño e instalación de sistemas fotovoltaicos para hogares, empresas y sector público, optimizando el consumo y reduciendo costos energéticos.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>🔧 Instalación Eléctrica</h3>
+<p>Montaje técnico certificado bajo normativa RETIE, garantizando seguridad, calidad y cumplimiento legal en cada proyecto.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>📊 Consultoría Energética</h3>
+<p>Auditorías y análisis de consumo para mejorar la eficiencia energética y maximizar el retorno de inversión.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>🌱 Innovación Energética</h3>
+<p>Desarrollo de soluciones sostenibles como hidrógeno, estufas ecológicas y tecnologías limpias adaptadas a cada cliente.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="section beneficios">
+<h2>Beneficios</h2>
+<p>Transforma tu consumo energético en ahorro, eficiencia y sostenibilidad.</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>💰 Ahorro real</h3>
+<p>Reduce hasta el 70% en tu factura de energía con soluciones diseñadas según tu consumo real, no estimaciones genéricas.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Independencia energética</h3>
+<p>Disminuye tu dependencia de la red eléctrica y protégete frente a aumentos en tarifas de energía.</p>
+</div>
+
+<div class="card">
+<h3>📈 Inversión inteligente</h3>
+<p>Recupera tu inversión en pocos años y aumenta el valor de tu propiedad con tecnología sostenible.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section pasos">
+<h2>¿Cómo funciona?</h2>
+<p>Un proceso claro, seguro y diseñado para maximizar tu inversión.</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>1️⃣ Diagnóstico personalizado</h3>
+<p>Analizamos tu consumo real para diseñar una solución eficiente y rentable adaptada a tus necesidades.</p>
+</div>
+
+<div class="card">
+<h3>2️⃣ Diseño a la medida</h3>
+<p>Desarrollamos un sistema optimizado que maximiza el ahorro y garantiza el mejor retorno de inversión.</p>
+</div>
+
+<div class="card">
+<h3>3️⃣ Instalación y acompañamiento</h3>
+<p>Implementamos tu sistema con estándares técnicos y te acompañamos en todo el proceso hasta su funcionamiento.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" style="background:#f4f6f8;">
+<h2>¿Listo para ahorrar energía?</h2>
+<p>Recibe una asesoría gratuita y empieza a reducir tu factura.</p>
+<a href="#contacto" class="btn">Solicitar cotización</a>
+</section>
+
+<!-- CONTACTO -->
+<section class="section" id="contacto">
+<h2>Cotiza tu proyecto</h2>
+
+<div class="form-container">
+<form action="https://formsubmit.co/eaenergia.sas@gmail.com" method="POST">
+
+<input type="text" name="nombre" placeholder="Nombre completo" required>
+
+<input type="email" name="email" placeholder="Correo electrónico" required>
+
+<input type="text" name="telefono" placeholder="Teléfono">
+
+<textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto (tipo de inmueble, consumo, ciudad...)" required></textarea>
+
+<input type="hidden" name="_captcha" value="false">
+
+<button type="submit">Solicitar asesoría</button>
+
+</form>
+</div>
+
+<p>📞 320 837 1721</p>
+<p>📍 Transv. 74 #11A-35</p>
+</section>
+
+<!-- WHATSAPP MEJORADO -->
+<a class="whatsapp" href="https://wa.me/573208371721" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+Cotiza aquí
+</a>
+
+<footer>
+<p>© 2026 E&A Energía Renovable</p>
+</footer>
+
+</body>
+</html>
